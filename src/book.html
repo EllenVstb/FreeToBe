@@ -190,9 +190,9 @@
         </div>
 
         <!-- Verzendknop -->
-        <div class="d-flex justify-content-center justify-content-md-start">
-            <a class="btn btn-primary mb-md-3 py-2 mt-md-2 mt-1" href="checkout.html" id="voegToe">Bevestig je
-                boeking</a>
+        <div class="d-flex justify-content-center"><a
+                class="btn btn-lg bg-primary text-white align-self-center m-5 px-5 py-3"
+                href="checkout.html">Bevestig je boeking</a>
         </div>
     </fieldset>
 </div>
@@ -221,7 +221,7 @@
                     <p class="mb-4 fs-4 fw-light "> Links </p>
                     <ul class="list-unstyled text-light">
                         <li><a class="text-light" href="shop.html">Activiteiten</a></li>
-                        <li><a class="text-light" href="book">Book your adventure</a></li>
+                        <li><a class="text-light" href="book.html">Book your adventure</a></li>
                         <li><a class="text-light" href="index.html#about">About</a></li>
                         <li><a class="text-light" href="index.html#FAQ">FAQ</a></li>
                         <li><a class="text-light" href="checkout.html">Check out</a></li>
@@ -242,7 +242,7 @@
                         <i class="bi bi-envelope-fill me-2 align-self-start"></i>
                         <div class="ms-2">
                             <p><a class="text-light" href="mailto:jill@freetobeme.be">jill@freetobeme.be</a></p>
-                            <p><a class="text-light" href="mailto:jill@freetobeme.be">ellen@freetobeme.be</a>
+                            <p><a class="text-light" href="mailto:ellen@freetobeme.be">ellen@freetobeme.be</a>
                             </p>
                         </div>
                     </div>
@@ -266,27 +266,19 @@
 
 <script>
 
-    function verwijderActiviteit(buttonElement) {
-        const rowElement = buttonElement.closest('.test');
-        if (rowElement) {
-            rowElement.remove();
-        }
-    }
 
-    // EXTRA ACTIVITEIT TOEVOEGEN
+    // EXTRA TOEVOEGEN
 
     document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('extraActiviteit').addEventListener('click', function () {
             var activiteitenContainer = document.getElementById('activiteitenContainer');
-
-            activiteitenContainer.innerHTML += `
- <div class="test">
-            <div class="row g-3">
+            activiteitenContainer.innerHTML += ` <div class="addedRow">
+            <div class="row g-3 mt-1">
                 <div class="col-md-6 m-0">
                     <div class="d-flex align-items-center">
                         <label class="form-label" for="activiteit">Activiteit *</label>
-                        <button class="btn btn-danger btn-sm ms-2" onclick="verwijderActiviteit(this)" type="button">
-                            Verwijderen
+                        <button class="btn btn-danger btn-sm ms-3 mb-2" onclick="verwijderActiviteit(this)" type="button">
+                            <i class="bi bi-trash"></i> Verwijderen
                         </button>
                     </div>
                     <select class="form-select">
@@ -296,7 +288,7 @@
                     </select>
                 </div>
                 <div class="col-md-6 m-0">
-                    <label class="form-label" for="type">Type *</label>
+                    <label class="form-label mt-2" for="type">Type *</label>
                     <select class="form-select">
                         <option>All in package Yoga & Surf Camp + personal coaching | € 1815 pp</option>
                         <option>All in package Yoga & Surf Camp | € 1475 pp</option>
@@ -309,8 +301,6 @@
         });
 
 
-
-
         // EXTRA PERSOON TOEVOEGEN -->
 
         let teller = 0;
@@ -319,9 +309,7 @@
             let container = document.getElementById('extraPersonenContainer');
             let nieuwePersoonHtml = `
             <fieldset class="" id="persoonsgegevens${teller}">
-            <legend class="mt-3 mb-0">Extra Deelnemer             <button class="btn text-danger btn-sm border-danger-subtle" onclick="verwijderPersoon(this)" type="button"><span><i class="bi bi-person-x-fill"></i></span> Verwijderen</button>
-</legend>
-
+            <legend class="mt-3 mb-0">Extra Deelnemer             <button class="ms-2 btn btn-danger btn-sm" onclick="verwijderPersoon(this)" type="button"><span><i class="bi bi-person-x-fill"></i></span> Verwijderen</button> </legend>
             <div class="row g-3 ">
                 <div class="col-md-6">
                     <label class="form-label" for="voornaam${teller}">Voornaam *</label>
@@ -381,13 +369,20 @@
         });
     });
 
+    // VERWIJDER FUNCTIES
+
     function verwijderPersoon(buttonElement) {
         const fieldsetElement = buttonElement.closest('fieldset');
         if (fieldsetElement) {
             fieldsetElement.remove();
         }
     }
-
+    function verwijderActiviteit(buttonElement) {
+        const rowElement = buttonElement.closest('.addedRow');
+        if (rowElement) {
+            rowElement.remove();
+        }
+    }
 
 </script>
 </body>
