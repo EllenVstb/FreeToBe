@@ -1,0 +1,328 @@
+// ******************************** GENERAL CSS ********************************
+
+// KLEUREN
+$light: #eae5d6;
+$primary: #0E3F88;
+$success: #11503A;
+$warning: #E07C67;
+$info: #E8B0A8;
+$danger: #CC281C;
+
+// FONTS
+@font-face {
+  font-family: monts-bl;
+  src: url('../fonts/Montserrat-Black.ttf');
+}
+@font-face {
+  font-family: monts-b;
+  src: url('../fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: rw-r;
+  src: url('../fonts/Raleway-Regular.ttf');
+}
+@font-face {
+  font-family: rw-l;
+  src: url('../fonts/Raleway-Light.ttf');
+}
+@font-face {
+  font-family: rw-t;
+  src: url('../fonts/Raleway-ThinItalic.ttf');
+}
+
+// Mixins
+@mixin font-style($family, $size, $weight: normal) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+// Typografie
+h1, h2 {
+  @include font-style('monts-bl', 3rem);
+  font-size: 3rem !important;
+}
+
+p {
+  @include font-style('rw-l', 0.85rem);
+  margin-bottom: 0.5rem !important;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.quote {
+  @include font-style('rw-l', 2rem);
+  font-style: italic;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.btn {
+  border-radius: 0 !important;
+}
+
+.fs-7 {
+  font-size: 0.6rem !important;
+}
+
+// ******************************** PAGE vanaf S ********************************
+
+// NAVBAR -------------------------
+nav {
+  z-index: 1;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible,
+.navbar-toggler-icon:focus,
+.navbar-toggler:hover {
+  border: none !important;
+}
+
+.nav-link:hover {
+  border-bottom: $primary solid 1px;
+}
+
+.display-7 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+// HERO -------------------------
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230E3F88'%3e%3cpath d='M11.354 1.646a.5.5 0 0 0-.708 0L4.646 8a.5.5 0 0 0 0 .708l6 6a.5.5 0 0 0 .708-.708L5.707 8l5.647-5.646a.5.5 0 0 0 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230E3F88'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+
+.img-tp-95 {
+  opacity: 95%;
+}
+
+.img-tp-50 {
+  opacity: 50%;
+}
+
+.p-6 {
+  padding: 25%;
+}
+
+// VJH -------------------------
+.mt-vjh {
+  margin-top: -24px;
+}
+
+.grid-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+#gridImages {
+  width: 300px;
+}
+
+// ACTIVITEITEN -------------------------
+
+.card-shortdescription {
+  font-style: italic;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.no-border-radius {
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.fs-acc {
+  font-size: 1rem !important;
+}
+
+.btn-explore:hover {
+  background-color: transparent !important;
+}
+
+// FOOTER -------------------------
+
+.max-logo {
+  width: 250px;
+  height: auto;
+}
+
+//***--------------------------- SHOP.HTML -----------------------------***//
+
+.accordion,
+.accordion-button,
+.accordion-item,
+.accordion-button:hover,
+.accordion-button:active,
+.accordion-button:focus,
+.accordion-item:hover,
+.accordion-item:active,
+.accordion-item:focus {
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary {
+  border-radius: 0 !important;
+}
+
+.btn-outline-primary:hover {
+  color: $light !important;
+}
+
+.accordion-button {
+  padding: 10px !important;
+  color: $primary !important;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  display: none;
+}
+
+.accordion-button::before,
+.accordion-button:not(.collapsed)::before {
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: center;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.accordion-button:not(.collapsed)::before {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%230E3F88" viewBox="0 0 16 16"><path d="M7.646 4.646a.5.5 0 0 1 .708 0L15 11.293l-1.354 1.353L8 7.707l-5.646 5.646L1 11.293l6.646-6.647z"/></svg>');
+}
+
+.accordion-button.collapsed::before {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%230E3F88" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');
+}
+
+.fs-details {
+  font-size: 2rem !important;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+.map-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+h4 {
+  @include font-style('monts-bl', 3rem);
+  font-size: 3rem !important;
+}
+
+//***--------------------------- DETAIL.HTML -----------------------------***//
+
+.hero-text {
+  @include font-style('monts-b', 3rem);
+  line-height: 3rem !important;
+}
+
+.list-group-item {
+  padding: 5px 20px !important;
+  background: transparent !important;
+  color: $primary !important;
+  border-bottom: $primary !important;
+  border-color: transparent !important;
+}
+
+.square-img img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.object-fit-center {
+  object-fit: cover;
+  object-position: center;
+}
+
+//***--------------------------- BOOK-CHECKOUT.HTML -----------------------------***
+
+.form-control,
+.form-select {
+  border-radius: 0 !important;
+}
+
+// ******************************** VANAF MEDIUM- 768 PX ********************************
+@media (min-width: 768px) {
+  // Fonts -------------------------
+  p {
+    @include font-style('rw-l', 1rem);
+    margin-bottom: 0.5rem !important;
+  }
+
+  // NAVBAR -------------------------
+  .nav-img {
+    height: 48px;
+  }
+
+  // SHOP.HTML -------------------------
+  .dropdown-menu {
+    border-radius: 0 !important;
+    color: $primary !important;
+  }
+
+  .dropdown-item {
+    color: $primary !important;
+    border-bottom: $primary solid 0.5px;
+  }
+
+  // DETAIL.HTML -------------------------
+  .hero-text {
+    @include font-style('monts-b', 8rem);
+    line-height: 7rem !important;
+  }
+
+  h4 {
+    @include font-style('monts-bl', 1.8rem);
+  }
+}
+
+//******************************** VANAF LARGE - 992px ********************************
+@media (min-width: 992px) {
+  // VJH -------------------------
+  .cropped-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  // DETAIL.HTML -------------------------
+  h4 {
+    @include font-style('monts-bl', 2.7rem);
+  }
+}

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Free to Be </title>
+    <script src="./js/main.js" type="module"></script>
+</head>
+<body class="bg-light">
+
+<!-- header -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav">
+        <div class="container-fluid justify-content-start">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img alt="FreeToBe" class="nav-img m-2 p-md-3 ms-md-5" height="24"
+                     src="images/logos/logo_name_blue.png">
+            </a>
+
+            <!-- Toggler for Mobile View-->
+            <div class="d-flex ms-auto">
+                <a class="bi bi-instagram px-2 display-7" href="https://www.instagram.com/___freetobe___/"
+                   target="_blank"></a>
+                <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler" data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse"
+                        type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto ">
+                    <!-- Menu Items -->
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active text-primary" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="shop.html">Activiteiten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html#about">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Shop Icon -->
+            <div class="d-flex justify-content-end">
+                <a class="bi bi-basket3-fill px-2 display-7 position-relative" href="/checkout.html">
+                    <span class="fs-7 position-absolute top-0 start-75 translate-middle badge bg-danger">1</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="bg-primary text-light" id="icon-bar">
+    <div class="d-flex justify-content-center align-items-center py-3" id="icons">
+        <img alt="Free to Be wave beige" class="px-2" height="24" src="images/icons/wave_beige.png">
+        <img alt="Free to Be surf beige" class="px-2" height="24" src="images/icons/surf_beige.png">
+        <img alt="Free to Be road beige" class="px-2" height="24" src="images/icons/road_beige.png">
+        <img alt="Free to Be path beige" class="px-2" height="24" src="images/icons/Path_beige.png">
+        <img alt="Free to Be mountain beige" class="px-2" height="24" src="images/icons/Mountain_beige.png">
+        <img alt="Free to Be grass beige" class="px-2" height="24" src="images/icons/grass_beige.png">
+        <img alt="Free to Be cloud beige" class="px-2" height="24" src="images/icons/Cloud_beige.png">
+        <img alt="Free to Be butterfly beige" class="px-2" height="24" src="images/icons/butterfly_beige.png">
+    </div>
+</section>
+
+<!-- BOEKINGS FORMULIER -->
+
+<div class="container mt-5">
+    <h1 class="text-primary my-5">Free To Be boekingsformulier</h1>
+
+    <fieldset id="gekozenActiveit">
+        <div class="row g-3" id="activiteitenContainer">
+            <!-- Activiteit-->
+            <div class=" col-md-6 m-0">
+                <label class="form-label" for="activiteit">Activiteit *</label>
+                <select class="form-select" id="activiteit">
+                    <option selected>Surf Adventures in Paradise - Sri Lanka</option>
+                    <option>Surf Adventures in Paradise - Portugal</option>
+                </select>
+            </div>
+            <!-- Type -->
+            <div class=" col-md-6 m-0">
+                <label class="form-label" for="type">Type *</label>
+                <select class="form-select" id="type">
+                    <option selected> All in package: Yoga,Surf & personal coaching | € 1815 pp</option>
+                    <option> Yoga & Surf package | € 1475 pp</option>
+                    <option> Surf Camp Only | € 1300 pp</option>
+                    <!-- Opties voor type -->
+                </select>
+            </div>
+        </div>
+
+        <button class="btn btn-primary mb-md-3 py-2 mt-md-2 mt-1" id="extraActiviteit" type="submit"><span><i
+                class="bi bi-calendar-plus-fill me-3"></i>
+        </span>Een extra activiteit toevoegen
+        </button>
+
+
+        <!-- Jouw gegevens -->
+        <fieldset class="" id="persoonsgegevens">
+            <legend>Jouw gegevens</legend>
+
+            <!-- Naam -->
+            <div class="row g-3 ">
+                <div class="col-md-6">
+                    <label class="form-label" for="voornaam">Voornaam *</label>
+                    <input class="form-control" id="voornaam" type="text">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="achternaam">Achternaam *</label>
+                    <input class="form-control" id="achternaam" type="text">
+                </div>
+            </div>
+
+            <!-- Adres -->
+            <div class="row g-3 ">
+                <div class="col-md-6">
+                    <label class="form-label" for="straat">Straat *</label>
+                    <input class="form-control" id="straat" type="text">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="huisnummer">Huisnummer *</label>
+                    <input class="form-control" id="huisnummer" type="text">
+                </div>
+            </div>
+            <div class="row g-3 ">
+                <div class="col-md-6">
+                    <label class="form-label" for="plaats">Plaats *</label>
+                    <input class="form-control" id="plaats" type="text">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="postcode">Postcode *</label>
+                    <input class="form-control" id="postcode" type="text">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="land">Land *</label>
+                    <input class="form-control" id="land" type="text">
+                </div>
+            </div>
+
+
+            <!-- Contactgegevens -->
+            <div class="row g-3 ">
+                <div class="col-md-6">
+                    <label class="form-label" for="telefoon">Telefoon</label>
+                    <input class="form-control" id="telefoon" type="tel">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="email">Email *</label>
+                    <input class="form-control" id="email" type="email">
+                </div>
+
+            </div>
+
+            <!-- Geboortedatum -->
+            <div class="row g-3">
+                <div class="col-md-12">
+                    <label class="form-label" for="geboortedatum">Geboortedatum *</label>
+                    <input class="form-control" id="geboortedatum" type="date">
+                </div>
+            </div>
+        </fieldset>
+
+        <div id="extraPersonenContainer"></div>
+
+        <button class="btn btn-primary mb-md-3 mt-md-2 mt-1" id="extraPersoon" type="submit"> <span><i
+                class="bi bi-person-plus-fill me-3"></i></span> Een extra deelnemer toevoegen
+        </button>
+
+
+        <!-- Algemene informatie -->
+        <div>
+            <label class="form-label" for="infoBron">Hoe ben je bij ons terecht gekomen *</label>
+            <select class="form-select" id="infoBron">
+                <option selected>Social Media</option>
+                <option>Vrienden of bekenden</option>
+                <option>Google</option>
+            </select>
+        </div>
+
+        <!-- Opmerkingen -->
+        <div>
+            <label class="form-label" for="opmerkingen">Opmerkingen</label>
+            <textarea class="form-control" id="opmerkingen" rows="5"></textarea>
+        </div>
+
+        <!-- Verzendknop -->
+        <div class="d-flex justify-content-center justify-content-md-start">
+            <a class="btn btn-primary mb-md-3 py-2 mt-md-2 mt-1" href="checkout.html" id="voegToe">Bevestig je
+                boeking</a>
+        </div>
+    </fieldset>
+</div>
+<!-- Footer -->
+<footer class="bg-success text-light">
+    <!-- Instagram -->
+    <section class="d-flex justify-content-center p-2 border-bottom border-info-subtle align-items-center">
+        <a class="bi bi-instagram px-2 display-7 text-light" href="https://www.instagram.com/___freetobe___/"
+           target="_blank"></a>
+        <a class="text-light" href="https://www.instagram.com/___freetobe___/" target="_blank"> Volg Free To Be
+            op
+            Instagram </a>
+    </section>
+
+    <!-- Logo -->
+    <section class="container">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-evenly pb-2">
+                <div>
+                    <img alt="FreeToBe Logo" class="img-fluid max-logo"
+                         src="images/footer_img.png">
+                </div>
+
+                <!-- Links -->
+                <div class="h-100 mt-5 d-none d-md-block">
+                    <p class="mb-4 fs-4 fw-light "> Links </p>
+                    <ul class="list-unstyled text-light">
+                        <li><a class="text-light" href="shop.html">Activiteiten</a></li>
+                        <li><a class="text-light" href="book">Book your adventure</a></li>
+                        <li><a class="text-light" href="index.html#about">About</a></li>
+                        <li><a class="text-light" href="index.html#FAQ">FAQ</a></li>
+                        <li><a class="text-light" href="checkout.html">Check out</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div class="h-100 ms-5 mt-5">
+                    <p class="mb-4 fs-4 fw-light ">Contact</p>
+                    <div class="d-flex">
+                        <i class="bi bi-geo-alt-fill me-2 align-self-start"></i>
+                        <address class="ms-2">
+                            <p class="mb-0">Caverstraat 8A</p>
+                            <p class="mb-0">8490 Jabbeke</p>
+                            <p class="mb-0">België</p>
+                        </address>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi bi-envelope-fill me-2 align-self-start"></i>
+                        <div class="ms-2">
+                            <p><a class="text-light" href="mailto:jill@freetobeme.be">jill@freetobeme.be</a></p>
+                            <p><a class="text-light" href="mailto:jill@freetobeme.be">ellen@freetobeme.be</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi bi-whatsapp me-2 align-self-start"></i>
+                        <div class="ms-2">
+                            <p><a class="mb-0 text-light" href="https://wa.me/32473601761" target="_blank">+32
+                                (0)486 66 84 23</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="text-center p-2 bg-light text-success"> © 2024 Copyright - Free To Be</div>
+
+</footer>
+
+
+<script>
+
+    function verwijderActiviteit(buttonElement) {
+        const rowElement = buttonElement.closest('.test');
+        if (rowElement) {
+            rowElement.remove();
+        }
+    }
+
+    // EXTRA ACTIVITEIT TOEVOEGEN
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('extraActiviteit').addEventListener('click', function () {
+            var activiteitenContainer = document.getElementById('activiteitenContainer');
+
+            activiteitenContainer.innerHTML += `
+ <div class="test">
+            <div class="row g-3">
+                <div class="col-md-6 m-0">
+                    <div class="d-flex align-items-center">
+                        <label class="form-label" for="activiteit">Activiteit *</label>
+                        <button class="btn btn-danger btn-sm ms-2" onclick="verwijderActiviteit(this)" type="button">
+                            Verwijderen
+                        </button>
+                    </div>
+                    <select class="form-select">
+                        <option>Surf Adventures in Paradise - Sri Lanka</option>
+                        <option>Surf Adventures in Paradise - Portugal</option>
+                        <option>Surf Adventures in Paradise - Costa Rica</option>
+                    </select>
+                </div>
+                <div class="col-md-6 m-0">
+                    <label class="form-label" for="type">Type *</label>
+                    <select class="form-select">
+                        <option>All in package Yoga & Surf Camp + personal coaching | € 1815 pp</option>
+                        <option>All in package Yoga & Surf Camp | € 1475 pp</option>
+                        <option>All in package Surf Camp | € 1300 pp</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        `;
+        });
+
+
+
+
+        // EXTRA PERSOON TOEVOEGEN -->
+
+        let teller = 0;
+        document.getElementById('extraPersoon').addEventListener('click', function () {
+            teller++;
+            let container = document.getElementById('extraPersonenContainer');
+            let nieuwePersoonHtml = `
+            <fieldset class="" id="persoonsgegevens${teller}">
+            <legend class="mt-3 mb-0">Extra Deelnemer             <button class="btn text-danger btn-sm border-danger-subtle" onclick="verwijderPersoon(this)" type="button"><span><i class="bi bi-person-x-fill"></i></span> Verwijderen</button>
+</legend>
+
+            <div class="row g-3 ">
+                <div class="col-md-6">
+                    <label class="form-label" for="voornaam${teller}">Voornaam *</label>
+                    <input class="form-control" id="voornaam${teller}" type="text">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="achternaam${teller}">Achternaam *</label>
+                    <input class="form-control" id="achternaam${teller}" type="text">
+                </div>
+            </div>
+
+            <div class="row g-3 ">
+                <div class="col-md-6">
+                    <label class="form-label" for="straat${teller}">Straat *</label>
+                    <input class="form-control" id="straat${teller}" type="text">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="huisnummer${teller}">Huisnummer *</label>
+                    <input class="form-control" id="huisnummer${teller}" type="text">
+                </div>
+            </div>
+
+            <div class="row g-3 ">
+                <div class="col-md-6">
+                    <label class="form-label" for="plaats${teller}">Plaats *</label>
+                    <input class="form-control" id="plaats${teller}" type="text">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="postcode${teller}">Postcode *</label>
+                    <input class="form-control" id="postcode${teller}" type="text">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="land${teller}">Land *</label>
+                    <input class="form-control" id="land${teller}" type="text">
+                </div>
+            </div>
+
+            <div class="row g-3 ">
+                <div class="col-md-6">
+                    <label class="form-label" for="telefoon${teller}">Telefoon</label>
+                    <input class="form-control" id="telefoon${teller}" type="tel">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="email${teller}">Email *</label>
+                    <input class="form-control" id="email${teller}" type="email">
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-12">
+                    <label class="form-label" for="geboortedatum${teller}">Geboortedatum *</label>
+                    <input class="form-control" id="geboortedatum${teller}" type="date">
+                </div>
+            </div>
+        </fieldset>`;
+            container.innerHTML += nieuwePersoonHtml;
+        });
+    });
+
+    function verwijderPersoon(buttonElement) {
+        const fieldsetElement = buttonElement.closest('fieldset');
+        if (fieldsetElement) {
+            fieldsetElement.remove();
+        }
+    }
+
+
+</script>
+</body>
+</html>

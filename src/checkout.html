@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Free to Be </title>
+    <script src="./js/main.js" type="module"></script>
+</head>
+<body class="bg-light">
+
+<!-- header -->
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav">
+        <div class="container-fluid justify-content-start">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img alt="FreeToBe" class="nav-img m-2 p-md-3 ms-md-5" height="24"
+                     src="images/logos/logo_name_blue.png">
+            </a>
+
+            <!-- Toggler for Mobile View-->
+            <div class="d-flex ms-auto">
+                <a class="bi bi-instagram px-2 display-7" href="https://www.instagram.com/___freetobe___/"
+                   target="_blank"></a>
+                <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler" data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse"
+                        type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto ">
+                    <!-- Menu Items -->
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active text-primary" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="shop.html">Activiteiten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html#about">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Shop Icon -->
+            <div class="d-flex justify-content-end">
+                <a class="bi bi-basket3-fill px-2 display-7 position-relative" href="checkout.html">
+                    <span class="fs-7 position-absolute top-0 start-75 translate-middle badge bg-danger">1</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="bg-primary text-light" id="icon-bar">
+    <div class="d-flex justify-content-center align-items-center py-5" id="icons">
+        <img alt="Free to Be wave beige" class="px-2" height="24" src="images/icons/wave_beige.png">
+        <img alt="Free to Be surf beige" class="px-2" height="24" src="images/icons/surf_beige.png">
+        <img alt="Free to Be road beige" class="px-2" height="24" src="images/icons/road_beige.png">
+        <img alt="Free to Be path beige" class="px-2" height="24" src="images/icons/Path_beige.png">
+        <img alt="Free to Be mountain beige" class="px-2" height="24" src="images/icons/Mountain_beige.png">
+        <img alt="Free to Be grass beige" class="px-2" height="24" src="images/icons/grass_beige.png">
+        <img alt="Free to Be cloud beige" class="px-2" height="24" src="images/icons/Cloud_beige.png">
+        <img alt="Free to Be butterfly beige" class="px-2" height="24" src="images/icons/butterfly_beige.png">
+    </div>
+</section>
+
+<!-- CHEKOUT SECTION -->
+<section class="container mt-5 text-primary">
+    <div class="row">
+        <!-- besteloverzicht  -->
+        <div class="col-md-6">
+            <h3>Controleer je boeking</h3>
+            <hr>
+            <div class="container p-0">
+                <div class="row mb-3 mt-5">
+                    <div class="col">
+                        <div class="card text-primary no-border-radius">
+                            <img alt="surf" class="card-img-top object-fit-center no-border-radius"
+                                 height="150" src="images/details/detail_img_02.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title">Surf Adventures in Paradise - Sri Lanka</h5>
+                                <p class="card-text">All in package Yoga & Surf Camp + personal coaching</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p> <i class="bi bi-person-fill"></i> Naam 1 + voornaam 1 </p>
+                                    <p>€ 905,00</p>
+                                    <button class="btn text-danger btn-sm" onclick="verwijderPersoon(this)" type="button"><span><i class="bi bi-person-x-fill"></i></span> Verwijderen</button>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p> <i class="bi bi-person-fill"></i> Naam 2 + voornaam 2 </p>
+                                    <p>€ 910,00</p>
+                                    <button class="btn text-danger btn-sm " onclick="verwijderPersoon(this)" type="button"><span><i class="bi bi-person-x-fill"></i></span> Verwijderen</button>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-primary">
+                                <div class="list-group-item">Totaal: € 1815,00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="card text-primary no-border-radius">
+                            <img alt="surf" class="card-img-top object-fit-center no-border-radius"
+                                 height="150" src="images/images_big/img_09.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Tweede activiteit</h5>
+                                <p class="card-text"> ... package ... </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p> <i class="bi bi-person-fill"></i> Naam 1 + voornaam 1 </p>
+                                    <p>€ 905,00</p>
+                                    <button class="btn text-danger btn-sm" onclick="verwijderPersoon(this)" type="button"><span><i class="bi bi-person-x-fill"></i></span> Verwijderen</button>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between text-primary">
+                                <div class="list-group-item">Totaal: € 1815,00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Totaal sectie -->
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-primary">
+                            <div class="card-header"> Totaal Boeking</div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item fw-bold">€ 2200,00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Factuurgegevens & payment -->
+        <div class="col-md-6 mt-5 mt-md-0">
+            <h3>Facturatiegegevens</h3>
+            <hr>
+            <form>
+                <div class="container mt-5">
+                    <div class="row">
+
+                        <div class="col-md-12 p-0">
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="voornaam">Voornaam *</label>
+                                        <input class="form-control" id="voornaam" required type="text">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="achternaam">Achternaam *</label>
+                                        <input class="form-control" id="achternaam" required type="text">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="bedrijfsnaam">Bedrijfsnaam</label>
+                                        <input class="form-control" id="bedrijfsnaam" required type="text">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="btwNummer">BTW nummer</label>
+                                        <input class="form-control" id="btwNummer" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-8">
+                                        <label class="form-label" for="straat">Straat + huisnummer *</label>
+                                        <input class="form-control" id="straat" required type="text">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label" for="postcode">Postcode *</label>
+                                        <input class="form-control" id="postcode" required type="text">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="plaatsnaam">Plaatsnaam *</label>
+                                        <input class="form-control" id="plaatsnaam" required type="text">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="land">Land *</label>
+                                        <input class="form-control" id="land" required type="text">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="telefoonnummer">Telefoonnummer *</label>
+                                        <input class="form-control" id="telefoonnummer" required type="tel">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="email">Email *</label>
+                                        <input class="form-control" id="email" type="email">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <h2>Additional Information</h2>
+                                    <div class="mb-6">
+                                        <label class="form-label" for="comments">Your Comment (Optional)</label>
+                                        <textarea class="form-control" id="comments" rows="5"></textarea>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                    <!-- Betaalmethoden -->
+                    <div class="my-5">
+                        <h3>Betaalopties</h3>
+                        <hr>
+                    </div>
+                    <!-- Betaalopties sectie -->
+                    <div class="mb-3">
+                        <!-- Bancontact -->
+                        <div class="form-check">
+                            <img class="ms-2">
+                            <svg fill="none" height="24" viewBox="0 0 32 24" width="32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.096 0.5H27.904C29.8862 0.5 31.5 2.12098 31.5 4.12903V19.871C31.5 21.879 29.8862 23.5 27.904 23.5H4.096C2.11376 23.5 0.5 21.879 0.5 19.871V4.12903C0.5 2.12098 2.11376 0.5 4.096 0.5Z"
+                                      fill="white" stroke="#E6E6E6"/>
+                                <path d="M9 17C12.6164 17 14.1918 14.411 16 12H4V17H9Z" fill="url(#paint0_linear)"/>
+                                <path d="M23 7C19.3836 7 17.8082 9.58904 16 12H28V7H23Z" fill="url(#paint1_linear)"/>
+                                <defs>
+                                    <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear" x1="6.42722" x2="15.2057" y1="14.4555"
+                                                    y2="11.1949">
+                                        <stop stop-color="#005AB9"/>
+                                        <stop offset="1" stop-color="#1E3764"/>
+                                    </linearGradient>
+                                    <linearGradient gradientUnits="userSpaceOnUse" id="paint1_linear" x1="16.7265" x2="26.0475" y1="12.2401"
+                                                    y2="9.06004">
+                                        <stop stop-color="#FBA900"/>
+                                        <stop offset="1" stop-color="#FFD800"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            </img>
+                            <input checked class="form-check-input" id="bancontact" name="paymentMethod" type="radio">
+                            <label class="form-check-label" for="bancontact"> Bancontact </label>
+                        </div>
+                        <!-- PayPal -->
+                        <div class="form-check">
+                            <img class="ms-2">
+                            <svg fill="none" height="24" viewBox="0 0 32 24" width="32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m27.904 0h-23.808c-2.26216 0-4.096 1.84863-4.096 4.12903v15.74197c0 2.2804 1.83384 4.129 4.096 4.129h23.808c2.2622 0 4.096-1.8486 4.096-4.129v-15.74197c0-2.2804-1.8338-4.12903-4.096-4.12903z"
+                                      fill="#0071c0"/>
+                                <path d="m6.47411 0c-.01075.0715255-.02304.144649-.03686.219771-.47501 2.537759-2.1001 3.414439-4.17562 3.414439h-1.05677c-.25382 0-.467708.1918-.50726.45233l-.541056 3.57068-.15321602 1.01215c-.02572798.17102.10099202.32526.26688002.32526h1.874302c.22195 0 .4105-.16782.44544-.39559l.01843-.09909.3529-2.33038.02266-.12786c.03456-.22857.22348-.39639.44544-.39639h.28032c1.81593 0 3.2375-.7672 3.65299-2.98729.17357-.92743.08371-1.701826-.37555-2.246459-.13901-.164229-.31143-.300487-.51303-.411571z"
+                                      fill="#99c6e5" transform="translate(13.7683 8.87006)"/>
+                                <path d="m5.27962.177415c-.07258-.021977-.14746-.041956-.22426-.059938-.07718-.0175813-.15629-.0331649-.2377-.0467508-.28492-.04795-.59712-.0707262-.93158-.0707262h-2.82317c-.069502 0-.13555.0163829-.194686.0459521-.130176.0651319-.226944.1933979-.250368.3504349l-.600576 3.958273-.01728.11548c.039552-.26053.25344-.45233.507264-.45233h1.056766c2.07552 0 3.70061-.87708 4.17562-3.414439.01421-.075121.02611-.148245.03686-.219771-.12019-.066331-.25037-.123071-.39053-.171421-.03456-.011988-.07027-.023575-.10636-.034764z"
+                                      fill="#cce2f2" transform="translate(14.4659 8.48645)"/>
+                                <path d="m3.69177 3.0764c.02343-.15704.12019-.28531.25037-.35004.05952-.02957.12518-.04595.19469-.04595h2.82317c.33446 0 .64665.02277.93158.07072.08141.01359.16051.02917.2377.04676.07679.01798.15168.03796.22425.05993.0361.01119.07181.02278.10675.03437.14016.04835.27034.10549.39053.17142.14131-.93782-.00115-1.57636-.48845-2.154557-.53721-.636537-1.50681-.909053-2.74752-.909053h-3.60192c-.25344 0-.46963.1918-.5088.452728l-1.50028429 9.895672c-.02956801.1958.11558429.3724.30528029.3724h2.223744l.55834-3.68613z"
+                                      fill="#fff" transform="translate(11.392 5.80646)"/>
+                            </svg>
+                            </img>
+                            <input class="form-check-input" id="paypal" name="paymentMethod" type="radio">
+                            <label class="form-check-label" for="paypal">PayPal </label>
+                        </div>
+                        <!-- Credit Card -->
+                        <div class="form-check">
+                            <img class="ms-2">
+                            <svg fill="none" height="24" viewBox="0 0 32 24" width="32" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="7" id="a"
+                                        width="9" x="3" y="7">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                                   values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+                                    <feOffset dy="1"/>
+                                    <feGaussianBlur stdDeviation=".5"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                    <feBlend in2="BackgroundImageFix" mode="normal" result="effect1_dropShadow"/>
+                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow" mode="normal" result="shape"/>
+                                </filter>
+                                <linearGradient gradientTransform="matrix(31.99997596 -23.99998197 31.99997596 23.99998197 -16 12)"
+                                                gradientUnits="userSpaceOnUse"
+                                                id="b" x2="1">
+                                    <stop offset="0" stop-color="#060b0e"/>
+                                    <stop offset="1" stop-color="#254764"/>
+                                </linearGradient>
+                                <linearGradient id="c">
+                                    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+                                    <stop offset="1" stop-color="#fff"/>
+                                </linearGradient>
+                                <linearGradient gradientTransform="matrix(-3.17876039 -8.70897134 8.70897134 -3.17876039 13.0557 17.6392)"
+                                                gradientUnits="userSpaceOnUse"
+                                                id="d" x2="1" xlink:href="#c"/>
+                                <linearGradient gradientTransform="matrix(-3.64877962 -14.67591437 14.67591437 -3.64877962 9.16207 34.8244)"
+                                                gradientUnits="userSpaceOnUse"
+                                                id="e" x2="1" xlink:href="#c"/>
+                                <linearGradient gradientTransform="matrix(5.86034935 23.57028621 -23.57028621 5.86034935 32.4248 26.4995)"
+                                                gradientUnits="userSpaceOnUse"
+                                                id="f" x2="1" xlink:href="#c"/>
+                                <linearGradient gradientTransform="matrix(0 5 -7 0 7 0)" gradientUnits="userSpaceOnUse" id="g"
+                                                x2="1">
+                                    <stop offset="0" stop-color="#fad961"/>
+                                    <stop offset="1" stop-color="#f7955d"/>
+                                </linearGradient>
+                                <mask height="24" id="h" maskUnits="userSpaceOnUse" width="32" x="0" y="0">
+                                    <path d="m28 0h-24c-2.20914 0-4 1.79086-4 4v16c0 2.2091 1.79086 4 4 4h24c2.2091 0 4-1.7909 4-4v-16c0-2.20914-1.7909-4-4-4z"
+                                          fill="#fff"/>
+                                </mask>
+                                <g mask="url(#h)">
+                                    <path d="m28 0h-24c-2.20914 0-4 1.79086-4 4v16c0 2.2091 1.79086 4 4 4h24c2.2091 0 4-1.7909 4-4v-16c0-2.20914-1.7909-4-4-4z"
+                                          fill="url(#b)"/>
+                                    <path d="m31.5 63c17.397 0 31.5-14.103 31.5-31.5s-14.103-31.5-31.5-31.5-31.5 14.103-31.5 31.5 14.103 31.5 31.5 31.5z"
+                                          fill="url(#d)" opacity=".1" transform="translate(6 6)"/>
+                                    <path d="m16.5 33c9.1127 0 16.5-7.3873 16.5-16.5s-7.3873-16.5-16.5-16.5-16.5 7.3873-16.5 16.5 7.3873 16.5 16.5 16.5z"
+                                          fill="url(#e)" opacity=".1" transform="translate(-10 12)"/>
+                                    <path d="m26.5 53c14.6355 0 26.5-11.8645 26.5-26.5s-11.8645-26.5-26.5-26.5-26.5 11.8645-26.5 26.5 11.8645 26.5 26.5 26.5z"
+                                          fill="url(#f)" opacity=".1" transform="translate(16 -31)"/>
+                                    <g filter="url(#a)">
+                                        <path d="m6 0h-5c-.552285 0-1 .447715-1 1v3c0 .55228.447715 1 1 1h5c.55228 0 1-.44772 1-1v-3c0-.552285-.44772-1-1-1z"
+                                              fill="#000" transform="translate(4 7)"/>
+                                    </g>
+                                    <path d="m6 0h-5c-.552285 0-1 .447715-1 1v3c0 .55228.447715 1 1 1h5c.55228 0 1-.44772 1-1v-3c0-.552285-.44772-1-1-1z"
+                                          fill="url(#g)" transform="translate(4 7)"/>
+                                    <path d="m1 0h-1v3h1z" fill="#7a3802" opacity=".3" transform="translate(5 8)"/>
+                                    <path d="m1 0h-1v3h1z" fill="#7a3802" opacity=".3" transform="translate(7 8)"/>
+                                    <path d="m1 0h-1v3h1z" fill="#7a3802" opacity=".3" transform="translate(9 8)"/>
+                                    <g fill="#fff" fill-opacity=".8">
+                                        <path d="m5 0h-5v1h5z" transform="translate(4 15)"/>
+                                        <path d="m3 0h-3v1h3z" transform="translate(4 17)"/>
+                                        <path d="m3 0h-3v1h3z" transform="translate(8 17)"/>
+                                        <path d="m3 0h-3v1h3z" transform="translate(12 17)"/>
+                                        <path d="m5 0h-5v1h5z" transform="translate(10 15)"/>
+                                        <path d="m5 0h-5v1h5z" transform="translate(16 15)"/>
+                                        <path d="m5 0h-5v1h5z" transform="translate(22 15)"/>
+                                    </g>
+                                </g>
+                            </svg>
+                            </img>
+                            <input class="form-check-input" id="creditCard" name="paymentMethod" type="radio">
+                            <label class="form-check-label" for="creditCard">Credit Card </label>
+                        </div>
+                        <!-- Bank Transfer -->
+                        <div class="form-check">
+                            <img class="ms-2">
+                            <svg fill="none" height="24" viewBox="0 0 32 24" width="32" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask height="7" id="a" maskUnits="userSpaceOnUse" width="6" x="6" y="9">
+                                    <path d="m0 0v5.34729h4.45531v-5.34729z" fill="#fff"
+                                          transform="translate(6.70969 9.74527)"/>
+                                </mask>
+                                <mask height="7" id="b" maskUnits="userSpaceOnUse" width="6" x="16" y="9">
+                                    <path d="m4.47353 0h-4.47353v5.37565h4.47353z" fill="#fff"
+                                          transform="translate(16.7716 9.68002)"/>
+                                </mask>
+                                <mask height="7" id="c" maskUnits="userSpaceOnUse" width="7" x="20" y="9">
+                                    <path d="m0 5.37567h5.33854v-5.37567h-5.33854z" fill="#fff"
+                                          transform="translate(20.681 9.68002)"/>
+                                </mask>
+                                <path d="m4.12903.5h23.74197c1.9991 0 3.629 1.63976 3.629 3.67391v15.65219c0 2.0341-1.6299 3.6739-3.629 3.6739h-23.74197c-1.99917 0-3.62903-1.6398-3.62903-3.6739v-15.65219c0-2.03415 1.62986-3.67391 3.62903-3.67391z"
+                                      fill="#fff" stroke="#e6e6e6"/>
+                                <g mask="url(#a)">
+                                    <path clip-rule="evenodd"
+                                          d="m4.29492 1.68639h-1.32273c0-.22089-.02545-.36906-.07621-.44452-.07876-.11172-.29596-.16761-.65152-.16761-.34538 0-.57424.03215-.68595.09652-.11164.06457-.16759.20498-.16759.42118 0 .19571.04954.32458.14875.38634.07101.04383.16497.06959.28199.07729l.26674.01917c.57167.03861.92871.06581 1.07112.08133.45214.04637.77983.16865.98325.36698.15996.15463.25539.3568.2859.60645.01775.14935.02666.31839.02666.50615 0 .43272-.04063.74968-.12183.95055-.14728.36854-.47811.60137-.99293.69913-.21566.04128-.54553.06195-.98928.06195-.7408 0-1.25697-.04487-1.548449-.13506-.357744-.11048-.593591-.33424-.7077331-.67128-.0635762-.18763-.0951079-.50009-.0951079-.9375h1.32267c0 .04878.00019.08602.00019.11171 0 .23348.06588.38355.19752.45046.0912.04611.2013.07031.3307.07317h.48631c.24808 0 .40651-.01297.47477-.03893.12164-.04865.20143-.12691.23956-.2353.02025-.06679.03025-.15314.03025-.25879 0-.23667-.08485-.38067-.25443-.43232-.06339-.02042-.35826-.04885-.88469-.08492-.42279-.03071-.71645-.06026-.88083-.08889-.433052-.08237-.721644-.25193-.865652-.50928-.1266393-.21867-.18989502-.54952-.18989502-.99209 0-.33704.03415932-.607302.10260602-.810584.068447-.203283.178744-.357718.330955-.463239.222965-.162131.508225-.2572831.855526-.2857179.28904-.0256304.60961-.0387391.96223-.0387391.55513 0 .95076.0325435 1.1866.0968478.57558.1574352.86328.5982392.86328 1.3225422 0 .05941-.00423.14831-.01275.267z"
+                                          fill="#0054a5" fill-rule="evenodd" transform="translate(6.70969 9.74527)"/>
+                                </g>
+                                <g mask="url(#b)">
+                                    <path clip-rule="evenodd"
+                                          d="m1.42175 2.74076h.88635c.28103-.0103.45195-.03235.51348-.06672.08402-.04702.14042-.14119.16849-.28232.01794-.09398.02691-.23374.02691-.41929 0-.22741-.01781-.39593-.05364-.50595-.05114-.15418-.17362-.24809-.36761-.2822-.03833-.00515-.13017-.00789-.27565-.00789h-.89833zm-1.42175 2.63491v-5.37567h2.07219.32525.25142c.36332 0 .64057.0301957.83104.0905217.43567.1389133.72798.4233263.87776.8531743.07723.225584.11587.565234.11587 1.018764 0 .54528-.04287.93717-.12766 1.17574-.1699.47178-.51957.74354-1.04773.81397-.06204.01057-.32628.02003-.79271.02759l-.23598.00802h-.8477v1.38789z"
+                                          fill="#0054a5" fill-rule="evenodd" transform="translate(16.7716 9.68002)"/>
+                                </g>
+                                <g mask="url(#c)">
+                                    <path clip-rule="evenodd"
+                                          d="m3.34493 3.39939-.66621-2.33022-.6464 2.33022zm.28231 1.04733h-1.90088l-.25539.92902h-1.47097l1.58716-5.37574h2.14473l1.60665 5.37574h-1.44001z"
+                                          fill="#0054a5" fill-rule="evenodd" transform="translate(20.681 9.68002)"/>
+                                </g>
+                                <path clip-rule="evenodd"
+                                      d="m3.51335.708457c.58635 0 1.1097.274891 1.45379.705453l.30648-.668671c-.47939-.461022-1.13168-.745239-1.85121-.745239-1.12027 0-2.07866.6885-2.471908 1.66311h-.597629l-.352873.76982h.76881c-.005768.07142-.009549.1429-.009549.21581 0 .08824.00455.17543.013074.26159h-.386328l-.3528088.77008h.9356328c.404469.94996 1.350869 1.61687 2.453579 1.61687.55571 0 1.07137-.16943 1.49833-.45887v-.94376c-.34383.39835-.84674.65009-1.40739.65009-.65543 0-1.23191-.34389-1.56755-.86433h1.9592l.35287-.77008h-2.60034c-.01339-.09268-.02057-.18737-.02057-.28383 0-.06522.00327-.12978.00948-.19357h2.8301l.35281-.76982h-2.93822c.325-.57065.92961-.954653 1.62222-.954653z"
+                                      fill="#fec10e" fill-rule="evenodd" transform="translate(11.3548 9.65216)"/>
+                            </svg>
+                            </img>
+                            <input class="form-check-input" id="directBankTransfer" name="paymentMethod" type="radio">
+                            <label class="form-check-label" for="directBankTransfer"> Overschrijving </label>
+                        </div>
+                    </div>
+
+                    <!-- Bestelling plaatsen knop -->
+                    <div class="mt-3">
+                        <button class="btn btn-lg bg-primary text-light align-self-center mb-4 mt-2 px-5 py-3"> Boeking bevestigen</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-success text-light">
+    <!-- Instagram -->
+    <section class="d-flex justify-content-center p-2 border-bottom border-info-subtle align-items-center">
+        <a class="bi bi-instagram px-2 display-7 text-light" href="https://www.instagram.com/___freetobe___/"
+           target="_blank"></a>
+        <a class="text-light" href="https://www.instagram.com/___freetobe___/" target="_blank"> Volg Free To Be
+            op
+            Instagram </a>
+    </section>
+
+    <!-- Logo -->
+    <section class="container">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-evenly pb-2">
+                <div>
+                    <img alt="FreeToBe Logo" class="img-fluid max-logo"
+                         src="images/footer_img.png">
+                </div>
+
+                <!-- Links -->
+                <div class="h-100 mt-5 d-none d-md-block">
+                    <p class="mb-4 fs-4 fw-light "> Links </p>
+                    <ul class="list-unstyled text-light">
+                        <li><a class="text-light" href="shop.html">Activiteiten</a></li>
+                        <li><a class="text-light" href="book.html">Book your adventure</a></li>
+                        <li><a class="text-light" href="index.html#about">About</a></li>
+                        <li><a class="text-light" href="index.html#FAQ">FAQ</a></li>
+                        <li><a class="text-light" href="checkout.html">Check out</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div class="h-100 ms-5 mt-5">
+                    <p class="mb-4 fs-4 fw-light ">Contact</p>
+                    <div class="d-flex">
+                        <i class="bi bi-geo-alt-fill me-2 align-self-start"></i>
+                        <address class="ms-2">
+                            <p class="mb-0">Caverstraat 8A</p>
+                            <p class="mb-0">8490 Jabbeke</p>
+                            <p class="mb-0">België</p>
+                        </address>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi bi-envelope-fill me-2 align-self-start"></i>
+                        <div class="ms-2">
+                            <p><a class="text-light" href="mailto:jill@freetobeme.be">jill@freetobeme.be</a></p>
+                            <p><a class="text-light" href="mailto:jill@freetobeme.be">ellen@freetobeme.be</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi bi-whatsapp me-2 align-self-start"></i>
+                        <div class="ms-2">
+                            <p><a class="mb-0 text-light" href="https://wa.me/32473601761" target="_blank">+32
+                                (0)486 66 84 23</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="text-center p-2 bg-light text-success"> © 2024 Copyright - Free To Be</div>
+
+</footer>
+
+<script>
+    function verwijderPersoon(buttonElement) {
+        const persoonContainer = buttonElement.closest('.d-flex');
+        persoonContainer.remove();
+    }
+
+</script>
+</body>
+</html>
