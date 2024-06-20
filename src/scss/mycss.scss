@@ -40,13 +40,13 @@ $danger: #CC281C;
 // Typografie
 h1, h2 {
   @include font-style('monts-bl', 3rem);
-  font-size: 3rem !important;
 }
 
 p {
   @include font-style('rw-l', 0.85rem);
   margin-bottom: 0.5rem !important;
 }
+
 
 .text-justify {
   text-align: justify;
@@ -279,13 +279,10 @@ h4 {
 
 // ******************************** VANAF MEDIUM- 768 PX ********************************
 @media (min-width: 768px) {
-  // Fonts -------------------------
   p {
     @include font-style('rw-l', 1rem);
     margin-bottom: 0.5rem !important;
   }
-
-  // NAVBAR -------------------------
   .nav-img {
     height: 48px;
   }
@@ -299,6 +296,25 @@ h4 {
   .dropdown-item {
     color: $primary !important;
     border-bottom: $primary solid 0.5px;
+  }
+
+  .form-check {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-check .form-check-input {
+    margin-right: 10px;
+  }
+
+  .form-check .ms-2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-check .form-check-label {
+    margin-bottom: 0;
+    margin-left: 10px;
   }
 
   // DETAIL.HTML -------------------------
