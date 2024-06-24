@@ -1,6 +1,6 @@
 // ******************************** GENERAL CSS ********************************
 
-// KLEUREN
+// KLEUREN: Deze variabelen definiëren de kleurcodes die door de hele site worden gebruikt. Dit maakt het makkelijker om kleuren te beheren en te wijzigen.
 $light: #eae5d6;
 $primary: #0E3F88;
 $success: #11503A;
@@ -8,7 +8,8 @@ $warning: #E07C67;
 $info: #E8B0A8;
 $danger: #CC281C;
 
-// FONTS
+// FONTS : Deze sectie importeert aangepaste lettertypen van lokale bestanden. Elk @font-face blok definieert een nieuw lettertype met een naam en een bestandspad.
+
 @font-face {
   font-family: monts-bl;
   src: url('../fonts/Montserrat-Black.ttf');
@@ -30,14 +31,15 @@ $danger: #CC281C;
   src: url('../fonts/Raleway-ThinItalic.ttf');
 }
 
-// Mixins
+// Mixins: Dit is een herbruikbare codeblok dat wordt gebruikt om consistent tekststijlen toe te passen. Het neemt drie parameters: lettertypefamilie, grootte en gewicht
+
 @mixin font-style($family, $size, $weight: normal) {
   font-family: $family;
   font-size: $size;
   font-weight: $weight;
 }
 
-// Typografie
+// Typografie: Headers, paragraaf, tekst, knoppen, enz.
 h1, h2 {
   @include font-style('monts-bl', 3rem);
 }
@@ -126,10 +128,6 @@ nav {
   width: 90px;
   height: 90px;
   object-fit: cover;
-}
-
-#gridImages {
-  width: 300px;
 }
 
 // ACTIVITEITEN -------------------------
